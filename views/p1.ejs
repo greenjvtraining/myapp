@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>P1</h1>
+    <hr>
+    <h2>사용자정보</h2>
+    <p>이름 : <%=user.name%></p>
+    <h2>Item 목록</h2>
+    <ul>
+        <% items.forEach(function(item) { %>
+            <li><%= item %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>

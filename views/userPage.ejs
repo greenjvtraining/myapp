@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Page</h1>
+    <hr>
+
+    name : <%= user.name %><br>
+    country : <%= user.country %><br>
+    <hr>
+    수정할 것<br>
+    <form action="/update" method="post">
+        이름 : <input type="text" name="name"><br>
+        국가 : <input type="text" name="country"><br>
+        <input type="submit" value="수정">
+    </form>
+    
+    <form action="/userdel" method="post">
+        <input type="text" name="name" value="<%= user.name %>">
+        <input type="submit" value="삭제">
+    </form>
+    
+</body>
+</html>

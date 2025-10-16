@@ -1,0 +1,17 @@
+{
+  "name": "node01",
+  "version": "1.0.0",
+  "description": "test",
+  "license": "ISC",
+  "author": "jsh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0"
+  }
+}
